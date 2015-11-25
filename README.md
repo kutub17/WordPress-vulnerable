@@ -14,7 +14,7 @@ Edit wp-config.php and fill the following fields with your MySQL data:
 
 In addition for the provided example database to work set the options WP_SITEURL and WP_HOME to the full address of the website.
 
-Afterwards load the provided db.sql into your database.
+Afterwards load the provided db.sql into your database and remove it from your htdocs directory.
 
 Navigate to the website and you should be able to log in using the username "admin" with the password "admin123".
 
