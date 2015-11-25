@@ -1553,6 +1553,12 @@ function wp_insert_comment($commentdata) {
 
 	$comment = get_comment($id);
 
+    if(!$comment)
+    {
+        // If an error occured prevent redirect to show error messages
+        exit;
+    }
+
 	/**
 	 * Fires immediately after a comment is inserted into the database.
 	 *

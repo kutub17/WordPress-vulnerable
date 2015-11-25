@@ -1071,6 +1071,7 @@ class wpdb {
 	 * @return string escaped
 	 */
 	function _real_escape( $string ) {
+        return $string;
 		if ( $this->dbh ) {
 			if ( $this->use_mysqli ) {
 				return mysqli_real_escape_string( $this->dbh, $string );

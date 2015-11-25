@@ -541,6 +541,7 @@ function wp_set_internal_encoding() {
  * @since 3.0.0
  */
 function wp_magic_quotes() {
+    /*
 	// If already slashed, strip.
 	if ( get_magic_quotes_gpc() ) {
 		$_GET    = stripslashes_deep( $_GET    );
@@ -553,6 +554,7 @@ function wp_magic_quotes() {
 	$_POST   = add_magic_quotes( $_POST   );
 	$_COOKIE = add_magic_quotes( $_COOKIE );
 	$_SERVER = add_magic_quotes( $_SERVER );
+     */
 
 	// Force REQUEST to be GET + POST.
 	$_REQUEST = array_merge( $_GET, $_POST );
